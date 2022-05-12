@@ -29,7 +29,7 @@ body{
     justify-content: center;
     align-items: center;
     animation-name: rotate;
-    animation-duration: 60s;
+    animation-duration: 100s;
     animation-iteration-count: infinite;
     
 }
@@ -54,7 +54,7 @@ body{
     height: 100px;
     z-index: 2;
     animation-name: rasmRotate;
-    animation-duration: 60s;
+    animation-duration: 100s;
     animation-iteration-count: infinite;
 }
 @keyframes rasmRotate{
@@ -88,4 +88,11 @@ body{
 .bigCircle img:nth-child(6){
     bottom: -16px;
     right: 75px;
+}
+.bigCircle:hover {
+    animation-play-state: paused;
+}
+.bigCircle:hover img{
+    animation-play-state: paused;
+
 }
