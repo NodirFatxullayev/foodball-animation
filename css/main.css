@@ -28,6 +28,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 .smallCircle{
     width: 300px;
@@ -41,6 +53,17 @@ body{
     width: 100px;
     height: 100px;
     z-index: 2;
+    animation-name: rasmRotate;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+@keyframes rasmRotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
 }
 .bigCircle img:nth-child(1){
     top: -16px;
